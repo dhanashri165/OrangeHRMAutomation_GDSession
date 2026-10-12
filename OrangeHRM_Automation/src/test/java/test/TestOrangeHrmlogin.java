@@ -1,5 +1,6 @@
 package test;
 
+import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -19,4 +20,9 @@ public class TestOrangeHrmlogin extends Base {
 
 		Assert.assertTrue(dashboardPage.isDashboardDisplayed(), "Dashboard is not displayed after login");
 	}
+	public void clickLoginButton() {
+		By loginButton = By.xpath("//button[@class='oxd-button oxd-button--medium oxd-button--main orangehrm-login-button']");
+		driver.findElement(loginButton).click();
+	}
+
 }
