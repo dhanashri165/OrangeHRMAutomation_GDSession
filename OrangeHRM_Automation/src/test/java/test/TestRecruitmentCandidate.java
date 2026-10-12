@@ -33,7 +33,10 @@ public class TestRecruitmentCandidate extends Base {
 
 				"9876543210", "Selenium, Java, TestNG", "Automation practice candidate");
 
+		// candidatePage.shortList().click();
+
 		// Validation
 		Assert.assertTrue(candidatePage.isCandidateCreated(), "Candidate was not created successfully");
+
 	}
 }

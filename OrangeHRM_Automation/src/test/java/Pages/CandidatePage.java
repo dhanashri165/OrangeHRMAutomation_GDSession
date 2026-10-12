@@ -1,7 +1,12 @@
 package Pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Wait;
 
 public class CandidatePage {
 
@@ -34,6 +39,8 @@ public class CandidatePage {
 	private By saveButton = By.xpath("//button[@type='submit']");
 
 	private By successMessage = By.xpath("//div[contains(@class,'oxd-toast-content')]");
+
+	private By shortListButton = By.xpath("//button[@class='oxd-button oxd-button--medium oxd-button--success']");
 
 	public CandidatePage(WebDriver driver) {
 		this.driver = driver;
@@ -116,5 +123,7 @@ public class CandidatePage {
 		enterNotes(note);
 
 		clickSave();
+
 	}
+
 }
