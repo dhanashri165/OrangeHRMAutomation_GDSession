@@ -18,5 +18,14 @@ public class TestOrangeHrmlogin extends Base {
 		DashboardPage dashboardPage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 
 		Assert.assertTrue(dashboardPage.isDashboardDisplayed(), "Dashboard is not displayed after login");
+		
+	}
+		public void clickLoginButton() {// new method added for validation
+		 By loginButton = By.cssSelector("button[type='submit']");
+	        driver.findElement(loginButton).click();
+	        
+	        
+	    }
+		
 	}
 }
