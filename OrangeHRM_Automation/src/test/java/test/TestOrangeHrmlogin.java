@@ -22,7 +22,7 @@ public class TestOrangeHrmlogin extends Base {
 		
 	}
 		public void clickLoginButton() {// new method added for validation
-		 By loginButton = By.cssSelector("button[type='submit']");
+		 By loginButton = By.cssSelector("button[type='subbmission123']");
 	        driver.findElement(loginButton).click();
 	        
 	        
@@ -33,5 +33,6 @@ public class TestOrangeHrmlogin extends Base {
 		By loginButton = By.xpath("//button[@class='oxd-button oxd-button--medium oxd-button--main orangehrm-login-button']");
 		driver.findElement(loginButton).click();
 	}
-
+	
+	System.out.println("Hello World");
 }
